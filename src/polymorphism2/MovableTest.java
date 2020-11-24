@@ -4,6 +4,7 @@ package polymorphism2;
  * Tester class for Movable, MovableCircle, and MovablePoint classes.
  * 
  * Question: What is the usage of the abstract method and abstract class?
+ * Answer: To define a class with an unspecified method that extending classes must specify.
  */
 public class MovableTest
 {

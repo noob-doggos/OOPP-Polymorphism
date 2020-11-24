@@ -4,6 +4,8 @@ package polymorphism1;
  * Tester class for Circle, Rectangle, and Square classes.
  * 
  * Question: What is the usage of the abstract method and abstract class?
+ * Answer: To define a class with an unspecified method that extending classes must specify.
+ * 
  */
 public class ShapeTest
 {
