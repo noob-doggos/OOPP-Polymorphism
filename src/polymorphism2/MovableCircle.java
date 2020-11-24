@@ -1,4 +1,4 @@
-package polymorphism;
+package polymorphism2;
 
 public class MovableCircle implements Movable
 { // saved as "MovableCircle.java"
@@ -11,8 +11,8 @@ public class MovableCircle implements Movable
     public MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius)
     {
         // Call the MovablePoint's constructor to allocate the center instance.
-        center = new MovablePoint(x, y, xSpeed, ySpeed);
-        // ......
+        this.center = new MovablePoint(x, y, xSpeed, ySpeed);
+        this.radius = radius;
     }
     // ......
 
@@ -20,7 +20,32 @@ public class MovableCircle implements Movable
     @Override
     public void moveUp()
     {
-        center.y -= center.ySpeed;
+        this.center.moveUp();
     }
+    
+    @Override
+    public void moveDown()
+    {
+        this.center.moveDown();
+    }
+    
+    @Override
+    public void moveLeft()
+    {
+        this.center.moveLeft();
+    }
+    
+    @Override
+    public void moveRight()
+    {
+        this.center.moveRight();
+    }
+    
+    @Override
+    public String toString()
+    {
+        return String.format("MovableCircle[%s,radius=%d]", this.center, this.radius);
+    }
+    
     // ......
 }

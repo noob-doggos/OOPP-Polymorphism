@@ -1,4 +1,4 @@
-package polymorphism;
+package polymorphism2;
 
 /*
  * Tester class for Movable, MovableCircle, and MovablePoint classes.
